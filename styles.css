@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 56px; /* Add padding to body to prevent content from being covered by the fixed header */
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Make the header position fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 0.5rem 1rem; /* Adjusted padding */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero-small {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-small .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-small h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Members Section */
+.members-section {
+    padding: 60px 0;
+}
+
+.members-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.members-section .member-card {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.members-section .member-card img {
+    margin-bottom: 15px;
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+.members-section .member-card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.members-section .member-card p {
+    margin-bottom: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+}
+
+footer h4 {
+    font-weight: bold;
+}
+
+footer ul li a {
+    color: #007bff; /* Change quick links to blue initially */
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #0056b3; /* Change color on hover to deep blue */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+footer ul li a:active {
+    color: #0056b3; /* Change color when clicked to deep blue */
+    text-decoration: underline; /* Add underline when clicked */
+}
+
+footer .list-inline-item a {
+    color: #007bff; /* Change social media icons to blue initially */
+    font-size: 20px;
+}
+
+footer .list-inline-item a:hover,
+footer .list-inline-item a:focus {
+    color: #0056b3; /* Change color on hover/focus to deep blue */
+}
+
+.members-section .member-card img {
+    max-width: 150px; /* Adjust the maximum width of the member images */
+}
+
+.members-section .member-card h4 {
+    font-size: 18px; /* Adjust the font size of the member name */
+}
+
+.members-section .member-card p {
+    font-size: 14px; /* Adjust the font size of the member description */
+}
+.board-members,
+.advisory-committee {
+    margin-bottom: 60px;
+}
+
+.board-members,
+.advisory-committee {
+    padding: 60px 0;
+    margin-bottom: 60px;
+}
+
+.board-members h2,
+.advisory-committee h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.board-members .member-card,
+.advisory-committee .member-card {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.board-members .member-card img,
+.advisory-committee .member-card img {
+    margin-bottom: 15px;
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+.board-members .member-card h4,
+.advisory-committee .member-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.board-members .member-card p,
+.advisory-committee .member-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Board Members and Advisory Committee Sections */
+.board-members,
+.advisory-committee {
+    padding: 60px 0;
+    margin-bottom: 60px;
+}
+
+.board-members h2,
+.advisory-committee h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.board-members .member-card,
+.advisory-committee .member-card {
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #fff; /* White background color for member cards */
+    padding: 20px; /* Add padding to the member cards */
+    border-radius: 20px; /* Add rounded corners to the member cards */
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); !* Add a subtle box shadow *!*/
+    border: 2px solid gray;
+}
+
+.board-members .col-md-3,
+.advisory-committee .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.board-members .member-card img,
+.advisory-committee .member-card img {
+    margin-bottom: 15px;
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+.board-members .member-card h4,
+.advisory-committee .member-card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.board-members .member-card p,
+.advisory-committee .member-card p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
